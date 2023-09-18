@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(25deg, #f181aa, #d36c76 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #eee9e9;
+    border-radius: 9px;
+    padding: 25px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 1.2rem;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #f181aa;
+}
+
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer {
+    font-size: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.timer span {
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ed5793f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+button:hover {
+    background-color: #b52161;
+}
+
+.lap-title {
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.laps {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    font-weight: 700;
+}
